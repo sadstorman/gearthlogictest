@@ -30,7 +30,7 @@ export const LoginScreen = () => {
                     {(formik) => (
                         <Form className='text-white'>
                             <MyTextInput className="mb-2"  name="email" type="email" placeholder="Email" />
-                            <MyTextInput className="my-2"  name="password" type="text" placeholder="Password" />
+                            <MyTextInput className="my-2"  name="password" type="password" placeholder="Password" />
                             <button className='auth__button btn btn-primary'>Login <i className="fa-solid fa-angle-right"></i></button>
                         </Form>
                     )
