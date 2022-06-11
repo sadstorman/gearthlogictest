@@ -1,0 +1,13 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(40, 58, 90, 0.9);
+}
+
+.main__screen_logo{
+  width: 120px;
+  height: 120px;
+  margin-left: 12px;
+}
+a{
+  text-decoration: none;
+}

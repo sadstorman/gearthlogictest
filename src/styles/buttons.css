@@ -1,0 +1,87 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 7px 10px 7px 10px;
+    transition: color .3s ease;
+}
+
+.btn:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    background-color: #47b2e4;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 50px;
+    transition: background-color .3s ease;
+}
+
+.btn-primary:disabled {
+    background-color: lighten(#47b2e4, 15);
+}
+
+.btn-primary:hover {
+    background-color: #007aff;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-text {
+    float: right;
+    margin: 11px 30px 0 0;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.btn-card {
+    width: 80px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.btn-card-l {
+    margin-right: 8px;
+}
+
+@media (min-width: 555px) {
+    .btn-logout {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+    }
+}
+
+@media (max-width: 554px) {
+    .btn-logout {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+    }
+}
+
+.btn-danger {
+    background-color: rgb(184, 38, 38);
+    transition: background-color .3s ease;
+
+}
+
+.btn-danger:hover {
+    background-color: lighten(red, 10);
+}
+
+.btn__AddProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 15px;
+}

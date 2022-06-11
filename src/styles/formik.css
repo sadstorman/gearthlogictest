@@ -1,0 +1,60 @@
+.form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main__screen form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+input,
+select {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+.margenes {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+button {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+form span,
+.error-message {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: #eb6767;
+    color: white;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.has-error {
+    border: 1px solid #9498ec;
+}

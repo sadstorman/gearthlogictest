@@ -1,0 +1,7 @@
+.fab-danger {
+    z-index: 1000;
+    bottom: 50px;
+    padding: 10px;
+    position: fixed;
+    left: 25px;
+  }
