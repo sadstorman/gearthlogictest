@@ -13,7 +13,7 @@ export const LoginScreen = () => {
     return (
         <div className='auth__main'>
             <div className='auth__box-container animate__animated animate__fadeIn'>
-                <img className='logo' src='assets/icons8-world-100.png' alt='logo'/>
+                <img className='logo' src='https://gearthlogic.com/assets/img/icons8-world-100.png' alt='logo'/>
                 <Formik
                     initialValues={{
                         email: '',
