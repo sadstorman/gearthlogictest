@@ -10,10 +10,10 @@ import { ProductCard } from './ui/ProductCard';
 import { startLogOut } from '../actions/auth';
 import { DeleteEventFab } from './ui/DeleteEventFab';
 import { finishRefresh, startRefresh } from '../actions/ui';
-import { SpinnerCheck } from './ui/SpinnerCheck';
 import { ProductModal } from './ui/ProductModal';
 import { MyImgInput } from './formik/MyImgInput';
 import { useForm } from '../hooks/useForm';
+import { SpinnerCheck2 } from './ui/SpinnerCheck2';
 
 export const ProductScreen = () => {
 
@@ -108,7 +108,7 @@ export const ProductScreen = () => {
                 </div>
                 <div className='col text-white'>
                     <div className='row'>
-                        <select className=" form-select" name="filtro" value={filtro} onChange={handleInputChange} aria-label="Default select example">
+                        <select className=" form-select mt-4" name="filtro" value={filtro} onChange={handleInputChange} aria-label="Default select example">
                             <option value="">Elija una categoria </option>
                             <option value="electrodomestico">Electrodomestico </option>
                             <option value="computacion"> Computación </option>
@@ -118,7 +118,7 @@ export const ProductScreen = () => {
                         </select>
                         {
                             (checking2)
-                                ? <SpinnerCheck />
+                                ? <SpinnerCheck2 />
                                 : products.map((producto, index) => (<ProductCard key={index} filtro={filtro} reload={checking2} props={producto} />))
                         }
                     </div>

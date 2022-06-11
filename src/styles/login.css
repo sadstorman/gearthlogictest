@@ -8,9 +8,7 @@
 }
 
 .spinner {
-    position: absolute;
-    top: 400px;
-    left: 900px;
+    margin-top: 450px;
 }
 
 .logo {

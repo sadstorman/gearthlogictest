@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom"
 import { startCheking } from "../actions/auth"
 import { LoginScreen } from "../components/auth/LoginScreen"
 import { ProductScreen } from "../components/ProductScreen"
@@ -23,7 +23,7 @@ export const Navigation = () => {
 
     return (
         <div>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route exact path='/login' element={
                         <PublicRoute uid={uid} >
@@ -42,7 +42,7 @@ export const Navigation = () => {
 
                     <Route path="/*" element={<Navigate to="/" replace />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     )
 }
