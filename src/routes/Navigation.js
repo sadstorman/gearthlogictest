@@ -32,7 +32,7 @@ export const Navigation = () => {
                     }
                     />
 
-                    <Route exact path='/home'
+                    <Route exact path='/'
                         element={
                             <PrivateRoute uid={uid}>
                                 <ProductScreen />
@@ -40,7 +40,7 @@ export const Navigation = () => {
                         }
                     />
 
-                    <Route path="/*" element={<Navigate to="/home" replace />} />
+                    <Route path="/*" element={<Navigate to="/" replace />} />
                 </Routes>
             </BrowserRouter>
         </div>
