@@ -56,7 +56,7 @@ export const ProductScreen = () => {
 
     return (
         <div className='main__screen container'>
-            <h1 className='text-center'> <a className='text-white' target="_blank" href="https://gearthlogic.com/"> GEARTHLOGIC</a> <img src='./assets/icons8-world-100.png ' className='main__screen_logo' /></h1>
+            <h1 className='text-center'> <a className='text-white' target="_blank" href="https://gearthlogic.com/"> GEARTHLOGIC</a> <img src='../assets/icons8-world-100.png ' className='main__screen_logo' /></h1>
             <button className='btn btn-danger btn-logout' onClick={handleLogOut}> Logout <i className="fa-solid fa-right-from-bracket"></i></button>
             <div className='row '>
                 <div className='col '  onClick={handleRemoveActive}>
